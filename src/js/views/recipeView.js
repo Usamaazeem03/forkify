@@ -20,7 +20,6 @@ class RecipeView extends View {
 
       if (!btn) return; // if the button is not clicked, return
       const updateTo = +btn.dataset.updateTo; // get the data-update-to attribute value
-      console.log(updateTo);
       if (updateTo > 0) handler(updateTo); // if the value is greater than 0, call the handler function
     });
   }

@@ -54,7 +54,6 @@ const controlSearchResults = async function () {
     //load search results
     await model.loadSearchResults(query);
     // render results
-    console.log(model.state.search.results);
     resultsView.render(model.getSearchResultsPage());
     // render pagination
     paginationView.render(model.state.search);
@@ -127,7 +126,5 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults); // search results on submit
   paginationView.addHandlerClick(controlPagination); // pagination on click
   addRecipeView.addHandlerUpload(controlAddRecipe); // add recipe on submit
-  // chack git
-  colsole.log('hello');
 };
 init();
