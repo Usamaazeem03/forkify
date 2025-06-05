@@ -1,0 +1,23 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": " parcel build index.html --dist-dir ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "core-js": "^3.42.0",
+    "fractional": "^1.0.0",
+    "parcel": "^2.14.4",
+    "regenerator-runtime": "^0.14.1",
+    "sass": "^1.87.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.14.4",
+    "svgo": "^3.3.2"
+  }
+}
